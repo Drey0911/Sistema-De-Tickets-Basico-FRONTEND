@@ -117,7 +117,7 @@ Sirve `dist/` en un servidor local para probar el build.
 ## API y servicios
 El cliente Axios se configura en `services/api.ts`:
 
-- Base URL por defecto: `http://localhost:8000/api`.
+- Base URL por defecto: `http://localhost:8000/api` o la API del backend que se encuentra en este mismo perfil de GitHub.
 - Interceptor de petición que añade `Authorization: Bearer <token>` si existe.
 
 ### Endpoints usados
@@ -194,7 +194,7 @@ docker build -t tickets-frontend .
 ```
 docker run -p 8080:80 --name tickets-frontend tickets-frontend
 ```
-La app quedará accesible en `http://localhost:8080/`.
+La app quedará accesible en `http://localhost:8080/`. 
 
 ## Contribución
 - Ejecuta `npm run lint` antes de abrir un PR.
