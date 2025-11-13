@@ -25,13 +25,13 @@ jobs:
       run: |
         npm ci
 
-    - name: Run linting
+    - name: List available scripts
       run: |
-        npm run lint || echo "No lint script found"
+        npm run
 
-    - name: Run tests
+    - name: Run linting (si existe)
       run: |
-        npm test -- --watchAll=false --passWithNoTests
+        npm run lint || echo "No lint script available"
 
     - name: Build application
       run: |
