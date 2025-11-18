@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { AuthResponse, Ticket, User} from '../types';
 
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'https://api-tickets-lynz.onrender.com/';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
